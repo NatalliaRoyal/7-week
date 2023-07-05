@@ -411,6 +411,7 @@ body {
 }
 
 .description-hp-text {
+	margin-bottom: 1.56rem;
 	font-size: 1.125rem;
 	font-weight: 400;
 	line-height: 2.125rem;
@@ -419,16 +420,22 @@ body {
 .hp-features {
 	display: flex;
 	justify-content: start;
-	margin-top: 1.56rem;
+	margin-bottom: 0.94rem;
 }
 
-.hp-features,
 .shop-features img {
 	width: 2rem;
 	height: 2rem;
 }
 
+.hp-features img {
+	width: 2rem;
+	height: 2rem;
+}
+
 .img-text {
+	display: block;
+	width: 30rem;
 	padding-left: 0.62rem;
 	padding-top: 0.4rem;
 }
@@ -436,7 +443,7 @@ body {
 .hp-button {
 	width: 12rem;
 	height: 3.68rem;
-	margin-top: 2.5rem;
+	margin-top: 1.5rem;
 	background: #000;
 	border: none;
 
