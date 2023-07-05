@@ -5,18 +5,29 @@
 
 * {
 	box-sizing: border-box;
-	margin: 0 auto;
 	padding: 0;
+	margin: 0;
 }
 
 html {
-	font-size: 18px;
+	font-size: 0.833333vw;
 }
 
 body {
+	margin: 0 auto;
 	color: #000;
 	font-family: 'Roboto', sans-serif;
 }
+
+/* title */
+.header-text,
+.description-title,
+.raffle-title {
+	font-size: 3.875rem;
+	font-family: 'Archangelsk', sans-serif;
+}
+
+/*  */
 
 /* nav */
 .nav {
@@ -32,6 +43,7 @@ body {
 
 .menu {
 	margin-top: 1.88rem;
+	margin-right: 20rem;
 }
 
 .menu>a:not(:last-child) {
@@ -58,8 +70,6 @@ body {
 
 .header-text {
 	padding: 4.38rem 4.38rem 1.56rem 4.38rem;
-	font-size: 3.875rem;
-	font-family: 'Archangelsk', sans-serif;
 }
 
 .header-button {
@@ -83,17 +93,11 @@ body {
 	margin: 4.38rem 20rem;
 }
 
-.description-title {
-	font-size: 3.875rem;
-	font-family: 'Archangelsk', sans-serif;
-}
-
 .description-text {
 	margin: 1.56rem 0 4.38rem 0;
 
 	color: #777777;
 	font-size: 1.125rem;
-	font-family: Roboto;
 	font-weight: 700;
 	line-height: 2.125rem;
 }
@@ -104,29 +108,215 @@ body {
 
 .gallery {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: 28.75rem 1fr;
 	grid-template-rows: auto;
 	grid-gap: 2rem;
+
+	width: 80rem;
 }
 
 .gallery-img-1 {
 	grid-column: 1;
+	width: 28.75rem;
 }
 
 .gallery-img-2 {
 	grid-column: 1;
+	width: 28.75rem;
 }
 
 .gallery-img-3 {
 	grid-column: 2/3;
 	grid-row: 1/3;
+	width: 100%;
 }
 
 /* line block */
 .line-block {
-	width: 100%;
+	width: 120rem;
 	height: 4.375rem;
 	background-image: url('./../img/description-game/line-block.png');
+}
+
+/* raffle */
+.raffle {
+	width: 120rem;
+	height: 50.875rem;
+	margin-top: -1rem;
+
+	padding: 0.94rem 20rem 4.38rem 20rem;
+	background: #000;
+	color: #FFF;
+}
+
+.raffle-title-block {
+	display: flex;
+	justify-content: start;
+}
+
+/* raffle star */
+.raffle-star {
+	width: 8.25rem;
+	height: 8.25rem;
+
+	background-image: url('./../img/raffle/star.svg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.raffle-star-text {
+	padding-top: 2.5rem;
+	padding-right: 2.5rem;
+
+	color: #F8F200;
+	font-size: 1.875rem;
+	font-family: 'Archangelsk', sans-serif;
+	transform: rotate(-45deg);
+	text-align: center;
+}
+
+.raffle-title {
+	margin-left: 2rem;
+	margin-top: 4.38rem;
+}
+
+.raffle-text {
+	margin-top: 2.44rem;
+	font-size: 1.125rem;
+	line-height: 2.125rem;
+}
+
+.raffle-wrapper {
+	display: flex;
+	justify-content: start;
+}
+
+/* raffle form  */
+.form-wrap {
+	display: flex;
+	flex-direction: column;
+	margin-top: 4rem;
+}
+
+.border-bottom {
+	border-bottom: 1px solid #777777;
+}
+
+.name-input,
+.email-input {
+	width: 28.75rem;
+	height: 2.31rem;
+	margin-top: 2.19rem;
+	background-color: #000;
+	border: none;
+}
+
+::placeholder {
+	font-size: 1.125rem;
+	font-weight: 300;
+}
+
+
+.file-label {
+	width: 28.75rem;
+	height: 7.5rem;
+	margin: 2.19rem 0;
+	border: 1px dashed #777;
+}
+
+.file-label-title,
+.file-label-text {
+	display: block;
+	text-align: center;
+	font-weight: 300;
+}
+
+.file-label-title {
+	margin-top: 2.44rem;
+	margin-bottom: 0.44rem;
+	font-size: 1.125rem;
+	text-decoration-line: underline;
+}
+
+.file-label-text {
+	font-size: 0.75rem;
+}
+
+.file-input {
+	opacity: 0;
+}
+
+.submit {
+	width: 12rem;
+	height: 3.6875rem;
+	margin-bottom: 0.94rem;
+	background: #F8F200;
+	color: #000;
+	font-size: 1.125rem;
+	font-weight: 700;
+}
+
+.checkbox-custom {
+	font-size: 0.75rem;
+	font-weight: 300;
+}
+
+/* checkbox */
+
+.checkbox-custom input[type="checkbox"] {
+	display: none;
+}
+
+.checkbox-custom label {
+	position: relative;
+	padding-left: 2rem;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	height: 1.8rem;
+}
+
+.checkbox-custom label:before {
+	content: url('/img/raffle/check.svg');
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1.25rem;
+	height: 1.25rem;
+	border: 2px solid #000;
+}
+
+.checkbox-custom label:after {
+	content: "";
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 10px;
+	height: 10px;
+	background-color: #000;
+	border-radius: 2px;
+	opacity: 0;
+	transform: scale(0);
+	transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.checkbox-custom input[type="checkbox"]:checked+label:after {
+	opacity: 1;
+	transform: scale(1);
+}
+
+/* raffle-images */
+
+
+
+
+
+
+
+
+
+.none {
+	display: none;
 }
 
 /* font-family: 'Archangelsk', sans-serif;

@@ -18,7 +18,7 @@
 </head>
 
 <body>
-	<header class="header">
+	<header class="header none">
 
 		<nav class="nav">
 			<div class="logo">
@@ -42,7 +42,7 @@
 
 	<main class="main">
 
-		<section class="description-game">
+		<section class="description-game none">
 			<h1 class="description-title">Найт-Сити изменит тебя навсегда!</h1>
 			<p class="description-text"> <span class="blue">Cyberpunk 2077 </span> — приключенческая ролевая игра, действие
 				которой происходит в
@@ -62,7 +62,61 @@
 
 		<div class="line-block"></div>
 
+		<section class="raffle">
 
+			<div class="raffle-title-block">
+				<div class="raffle-star">
+					<p class="raffle-star-text">акция</p>
+				</div>
+				<h2 class="raffle-title">Играй и выигрывай!</h2>
+			</div>
+			<p class="raffle-text">Играй в <span class="blue">Cyberpunk 2077</span> и получи возможность выиграть консоль<span
+					class="blue"> Xbox Series X</span> или <span class="blue">Sony
+					PlayStation 5!</span> Заполни <br> форму ниже и приложи скриншот о покупке игры. Итоги розыгрыша будут
+				подведены 1
+				февраля.
+				Удачи!</p>
+
+			<div class="raffle-wrapper">
+				<form class="form-wrap">
+					<label class="border-bottom" for="name">
+						<input class="name-input" type="text" id="name" name="name" placeholder="Как тебя зовут?">
+					</label>
+					<label class="border-bottom" for="email">
+						<input class="email-input" type="email" id="email" name="email" placeholder="Твой е-mail">
+					</label>
+
+
+					<label class="file-label" for="file">
+						<span class="file-label-title">Прикрепить скриншот</span>
+						<span class="file-label-text">
+							.png / .jpg / .pdf
+						</span>
+						<input class=" file-input" id="file" type="file" name="attachment">
+					</label>
+
+					<label for="submit">
+						<input class="submit" id="submit" type="submit" value="Отправить">
+					</label>
+
+
+					<div class="checkbox-custom">
+						<input type="checkbox" id="agree-checkbox" name="agree">
+						<label for="agree-checkbox">Согласен на обработку
+							персональных данных</label>
+					</div>
+				</form>
+
+
+
+				<div class="raffle-images">
+
+				</div>
+
+			</div>
+
+
+		</section>
 
 	</main>
 </body>
