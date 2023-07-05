@@ -518,11 +518,40 @@ body {
 	height: 2.19925rem;
 }
 
-
-.none {
-	display: none;
+/* footer */
+.footer {
+	display: flex;
+	justify-content: space-between;
+	margin: 0.81rem 20rem;
 }
 
-/* font-family: 'Archangelsk', sans-serif;
-font-family: 'Roboto', sans-serif;
-*/
+.footer-logo,
+.privacy {
+	display: flex;
+	gap: 2rem;
+	align-items: center;
+}
+
+.footer-logo-cyber {
+	width: 18.5rem;
+	height: 4.625rem;
+}
+
+.footer-logo-cd {
+	width: 10.75313rem;
+	height: 4.625rem;
+}
+
+.copy {
+	width: 120rem;
+	height: 2.5rem;
+	padding: 0.81rem 0;
+	background: #000;
+}
+
+.copy p {
+	color: #FFF;
+	text-align: center;
+	font-size: 0.75rem;
+	font-weight: 400;
+}
