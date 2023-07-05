@@ -41,9 +41,19 @@ body {
 	margin-left: 20rem;
 }
 
+.logo img {
+	width: 18.5rem;
+	height: 4.6rem;
+}
+
 .menu {
 	margin-top: 1.88rem;
 	margin-right: 20rem;
+}
+
+.menu img {
+	width: 1.875rem;
+	height: 1.875rem;
 }
 
 .menu>a:not(:last-child) {
@@ -62,7 +72,7 @@ body {
 .yellow-block {
 	width: 39rem;
 	height: 23.0625rem;
-	margin-top: 34rem;
+	margin-top: 33.5rem;
 	margin-left: 61rem;
 	background-color: #F8F200;
 	clip-path: polygon(15% 0, 100% 0, 100% 85%, 85% 100%, 0 100%, 0 15%);
@@ -306,13 +316,207 @@ body {
 }
 
 /* raffle-images */
+.raffle-images {
+	display: flex;
+	justify-content: start;
+}
 
+.raffle-images img {
+	width: 18.5rem;
+	height: 21.9rem;
+	margin-top: 3.12rem;
+}
 
+.Xbox-img {
+	width: 28.75rem;
+	height: 28.5rem;
+	background: url('./../img/raffle/Layer-1.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 3;
+}
 
+.Xbox-img img {
+	margin-left: 8.25rem;
+}
 
+.PlayStation-img {
+	margin-left: -8rem;
+	width: 28.75rem;
+	height: 28.5rem;
+	background: url('./../img/raffle/Layer-2.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 
+.PlayStation-img img {
+	margin-left: 8rem;
+}
 
+/* line-block */
+.line-block-raffle {
+	width: 120rem;
+	height: 4.375rem;
+	margin-top: -1rem;
+	background: url('./../img/raffle/line.png') lightgray 50% / cover no-repeat;
+}
 
+/* hp block */
+
+.hp-block {
+	display: flex;
+	width: 120rem;
+	height: 42.25rem;
+	padding: 4.4rem 20rem;
+	background: #F8F200;
+}
+
+.hp-tv img {
+	width: 39rem;
+	height: 26.875rem;
+}
+
+.hp-logo-row {
+	display: flex;
+	justify-content: space-around;
+	width: 39rem;
+	margin-top: 1.62rem;
+}
+
+.logo-hp {
+	width: 5rem;
+	height: 5rem;
+}
+
+.x {
+	height: 1.19894rem;
+	width: 5.625rem;
+	margin-top: 2rem;
+}
+
+.logo-cyberpunk {
+	width: 20rem;
+	height: 5rem;
+}
+
+.description-hp {
+	margin-left: 2rem;
+}
+
+.description-hp-title {
+	margin-bottom: 1.56rem;
+	font-size: 3.875rem;
+	font-weight: 400;
+	font-family: 'Archangelsk', sans-serif;
+}
+
+.description-hp-text {
+	font-size: 1.125rem;
+	font-weight: 400;
+	line-height: 2.125rem;
+}
+
+.hp-features {
+	display: flex;
+	justify-content: start;
+	margin-top: 1.56rem;
+}
+
+.hp-features,
+.shop-features img {
+	width: 2rem;
+	height: 2rem;
+}
+
+.img-text {
+	padding-left: 0.62rem;
+	padding-top: 0.4rem;
+}
+
+.hp-button {
+	width: 12rem;
+	height: 3.68rem;
+	margin-top: 2.5rem;
+	background: #000;
+	border: none;
+
+	color: #F8F200;
+	font-size: 1.125rem;
+	font-weight: 700;
+}
+
+/* shop */
+.shop {
+	display: flex;
+	height: 45rem;
+}
+
+.shop-left-block {
+	width: 59rem;
+	height: 45rem;
+	background-image: url('./../img/shop/left-img.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.shop-right-block {
+	width: 61rem;
+	padding-left: 2rem;
+	color: #FFF;
+	background: #000;
+}
+
+.shop-title {
+	margin-top: 4.38rem;
+	font-size: 3.875rem;
+	font-weight: 400;
+	font-family: 'Archangelsk', sans-serif;
+}
+
+.shop-blue {
+	margin-top: 1.56rem;
+	margin-bottom: 1.31rem;
+	color: #52BEDC;
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+.shop-features {
+	display: flex;
+	justify-content: start;
+}
+
+.platform {
+	padding-top: 3rem;
+}
+
+.block-platform {
+	display: grid;
+	grid-template-columns: 3.875rem 11.125rem;
+	grid-template-rows: auto;
+	margin-top: 1.55rem;
+	gap: 3rem 5rem;
+}
+
+.pc {
+	width: 3.875rem;
+	height: 2.19925rem;
+}
+
+.xbox {
+	width: 11.125rem;
+	height: 2.19925rem;
+}
+
+.stadia {
+	width: 3.625rem;
+	height: 3.14175rem;
+}
+
+.ps4 {
+	width: 10.50006rem;
+	height: 2.19925rem;
+}
 
 
 .none {
