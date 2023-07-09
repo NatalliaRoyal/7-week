@@ -5,8 +5,6 @@
 
 * {
 	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
 }
 
 html {
@@ -14,31 +12,35 @@ html {
 }
 
 body {
-	margin: 0 auto;
+	margin: 0;
 	color: #000;
 	font-family: 'Roboto', sans-serif;
 }
 
-/* title */
-.header-text,
-.description-title,
-.raffle-title {
-	font-size: 3.875rem;
-	font-family: 'Archangelsk', sans-serif;
+a {
+	text-decoration: none;
+	color: #000;
 }
 
-/*  */
+/* header */
 
-/* nav */
+.header {
+	height: 67.5rem;
+	padding: 0 20rem;
+	background: url('./../img/nav/backgound.jpg') lightgray 50% / cover no-repeat;
+
+}
+
+/* header nav  */
+
 .nav {
 	display: flex;
 	justify-content: space-between;
-
 }
 
+/* header logo */
 .logo {
 	margin-top: 1.25rem;
-	margin-left: 20rem;
 }
 
 .logo img {
@@ -46,9 +48,10 @@ body {
 	height: 4.6rem;
 }
 
+/* header menu */
+
 .menu {
 	margin-top: 1.88rem;
-	margin-right: 20rem;
 }
 
 .menu img {
@@ -60,25 +63,19 @@ body {
 	padding-right: 2.5rem;
 }
 
-/* header */
-
-.header {
-	width: 120rem;
-	height: 62.5rem;
-
-	background: url('./../img/nav/backgound.jpg') lightgray 50% / cover no-repeat;
-}
+/* header yellow block */
 
 .yellow-block {
 	width: 39rem;
 	height: 23.0625rem;
-	margin-top: 33.5rem;
-	margin-left: 61rem;
+	margin: 38.5rem 0 0 41rem;
 	background-color: #F8F200;
 	clip-path: polygon(15% 0, 100% 0, 100% 85%, 85% 100%, 0 100%, 0 15%);
 }
 
 .header-text {
+	font-size: 3.875rem;
+	font-family: 'Archangelsk', sans-serif;
 	padding: 4.38rem 4.38rem 1.56rem 4.38rem;
 }
 
@@ -93,19 +90,22 @@ body {
 	font-size: 1.5rem;
 	font-weight: 700;
 	line-height: 2.5rem;
+	cursor: pointer;
 }
 
-/* main */
-
-
-/* description gallery */
+/* description game (1 section) */
 .description-game {
-	margin: 4.38rem 20rem;
+	height: 48.5625rem;
+	margin: 4.38rem 20rem 4.5rem 20rem;
+}
+
+.description-title {
+	font-size: 3.875rem;
+	font-family: 'Archangelsk', sans-serif;
 }
 
 .description-text {
 	margin: 1.56rem 0 4.38rem 0;
-
 	color: #777777;
 	font-size: 1.125rem;
 	font-weight: 700;
@@ -116,12 +116,12 @@ body {
 	color: #52BEDC;
 }
 
+/* gallery */
 .gallery {
 	display: grid;
 	grid-template-columns: 28.75rem 1fr;
 	grid-template-rows: auto;
 	grid-gap: 2rem;
-
 	width: 80rem;
 }
 
@@ -143,15 +143,16 @@ body {
 
 /* line block */
 .line-block {
-	width: 120rem;
+	width: 100vw;
 	height: 4.375rem;
-	background-image: url('./../img/description-game/line-block.png');
+	margin-top: -1rem;
+	background: url('./../img/description-game/line-block.png') lightgray 50% / cover no-repeat;
 }
 
 /* raffle */
 .raffle {
 	width: 120rem;
-	height: 50.875rem;
+	height: 53rem;
 	margin-top: -1rem;
 
 	padding: 0.94rem 20rem 4.38rem 20rem;
@@ -175,8 +176,8 @@ body {
 }
 
 .raffle-star-text {
-	padding-top: 2.5rem;
-	padding-right: 2.5rem;
+	padding-top: 1rem;
+	padding-right: 1rem;
 
 	color: #F8F200;
 	font-size: 1.875rem;
@@ -188,6 +189,8 @@ body {
 .raffle-title {
 	margin-left: 2rem;
 	margin-top: 4.38rem;
+	font-size: 3.875rem;
+	font-family: 'Archangelsk', sans-serif;
 }
 
 .raffle-text {
@@ -232,6 +235,7 @@ body {
 	height: 7.5rem;
 	margin: 2.19rem 0;
 	border: 1px dashed #777;
+	cursor: pointer;
 }
 
 .file-label-title,
@@ -264,55 +268,28 @@ body {
 	color: #000;
 	font-size: 1.125rem;
 	font-weight: 700;
-}
-
-.checkbox-custom {
-	font-size: 0.75rem;
-	font-weight: 300;
+	cursor: pointer;
 }
 
 /* checkbox */
 
-.checkbox-custom input[type="checkbox"] {
-	display: none;
-}
-
-.checkbox-custom label {
-	position: relative;
-	padding-left: 2rem;
-	cursor: pointer;
+.checkbox {
 	display: flex;
-	align-items: center;
-	height: 1.8rem;
+	justify-items: center;
+	font-size: 0.75rem;
+	font-weight: 300;
+	padding-bottom: 5rem;
 }
 
-.checkbox-custom label:before {
-	content: url('/img/raffle/check.svg');
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 1.25rem;
-	height: 1.25rem;
-	border: 2px solid #000;
+.checkbox label {
+	display: block;
+	margin-left: 0.62rem;
+	margin-top: 0.2rem;
+	cursor: pointer;
 }
 
-.checkbox-custom label:after {
-	content: "";
-	position: absolute;
-	top: 5px;
-	left: 5px;
-	width: 10px;
-	height: 10px;
-	background-color: #000;
-	border-radius: 2px;
-	opacity: 0;
-	transform: scale(0);
-	transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
-}
-
-.checkbox-custom input[type="checkbox"]:checked+label:after {
-	opacity: 1;
-	transform: scale(1);
+.checkbox input {
+	cursor: pointer;
 }
 
 /* raffle-images */
@@ -357,7 +334,6 @@ body {
 .line-block-raffle {
 	width: 120rem;
 	height: 4.375rem;
-	margin-top: -1rem;
 	background: url('./../img/raffle/line.png') lightgray 50% / cover no-repeat;
 }
 
@@ -437,7 +413,7 @@ body {
 	display: block;
 	width: 30rem;
 	padding-left: 0.62rem;
-	padding-top: 0.4rem;
+	margin: 0;
 }
 
 .hp-button {
@@ -450,79 +426,7 @@ body {
 	color: #F8F200;
 	font-size: 1.125rem;
 	font-weight: 700;
-}
-
-/* shop */
-.shop {
-	display: flex;
-	height: 45rem;
-}
-
-.shop-left-block {
-	width: 59rem;
-	height: 45rem;
-	background-image: url('./../img/shop/left-img.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.shop-right-block {
-	width: 61rem;
-	padding-left: 2rem;
-	color: #FFF;
-	background: #000;
-}
-
-.shop-title {
-	margin-top: 4.38rem;
-	font-size: 3.875rem;
-	font-weight: 400;
-	font-family: 'Archangelsk', sans-serif;
-}
-
-.shop-blue {
-	margin-top: 1.56rem;
-	margin-bottom: 1.31rem;
-	color: #52BEDC;
-	font-size: 1.5rem;
-	font-weight: 700;
-}
-
-.shop-features {
-	display: flex;
-	justify-content: start;
-}
-
-.platform {
-	padding-top: 3rem;
-}
-
-.block-platform {
-	display: grid;
-	grid-template-columns: 3.875rem 11.125rem;
-	grid-template-rows: auto;
-	margin-top: 1.55rem;
-	gap: 3rem 5rem;
-}
-
-.pc {
-	width: 3.875rem;
-	height: 2.19925rem;
-}
-
-.xbox {
-	width: 11.125rem;
-	height: 2.19925rem;
-}
-
-.stadia {
-	width: 3.625rem;
-	height: 3.14175rem;
-}
-
-.ps4 {
-	width: 10.50006rem;
-	height: 2.19925rem;
+	cursor: pointer;
 }
 
 /* footer */
@@ -552,8 +456,9 @@ body {
 .copy {
 	width: 120rem;
 	height: 2.5rem;
-	padding: 0.81rem 0;
 	background: #000;
+	padding: 0.3rem 0;
+
 }
 
 .copy p {
@@ -561,4 +466,545 @@ body {
 	text-align: center;
 	font-size: 0.75rem;
 	font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+/* media tablet */
+
+@media (max-width: 1020px) {
+	html {
+		font-size: 1.568vw;
+	}
+
+	.header {
+		background-image: url('./../img/adapt/imgonline-com-ua-Resize-kRa6iri5ll1FLI.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 1.25rem 2.25rem 0 2.25rem;
+
+	}
+
+	.yellow-block {
+		margin: 37.6rem 0 0 20.1rem;
+	}
+
+	.description-game {
+		height: 68.8125rem;
+		margin: 4.38rem 2.25rem 4.5rem 2.25rem;
+	}
+
+	.description-title {
+		width: 38.75rem;
+	}
+
+	.gallery {
+		display: grid;
+		grid-template-columns: 28.75rem 28.75rem;
+		grid-template-rows: 12.25rem 26.5rem;
+		grid-gap: 2rem;
+		width: 60rem;
+	}
+
+	.gallery-img-1 {
+		grid-column: 1;
+		width: 28.75rem;
+	}
+
+	.gallery-img-2 {
+		grid-column: 2;
+		width: 28.75rem;
+	}
+
+	.gallery-img-3 {
+		grid-column: 1/3;
+		grid-row: 2/3;
+		width: 59.5rem;
+		height: 26.5rem;
+	}
+
+	.raffle {
+		width: 100vw;
+		height: 60rem;
+		margin-top: -1rem;
+		padding: 0 2.25rem;
+		background: #000;
+		color: #FFF;
+	}
+
+	.raffle-wrapper {
+		display: flex;
+		flex-direction: row;
+		width: 28.75rem;
+		margin: 0;
+	}
+
+	.raffle-images {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.Xbox-img {
+		width: 18.75rem;
+		height: 18.5rem;
+		background: url('./../img/raffle/Layer-1.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		z-index: 3;
+		margin-left: 3rem;
+	}
+
+	.Xbox-img img {
+		margin: 1.8rem 0 1.5rem 7.5rem;
+		width: 13.5rem;
+		height: 17rem;
+	}
+
+	.PlayStation-img {
+		width: 18.75rem;
+		height: 18.5rem;
+		background: url('./../img/raffle/Layer-2.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin-left: 5rem;
+	}
+
+	.PlayStation-img img {
+		margin: 1.8rem 0 1.5rem 7.5rem;
+		width: 13.5rem;
+		height: 17rem;
+	}
+
+	.line-block-raffle {
+		width: 100vw;
+		height: 4.375rem;
+		background: url('./../img/raffle/line.png') lightgray 50% / cover no-repeat;
+	}
+
+	.hp-block {
+		display: flex;
+		width: 100vw;
+		height: 48rem;
+		padding: 4.4rem 2rem;
+		background: #F8F200;
+		margin: 0;
+	}
+
+	.hp-tv {
+		text-align: center;
+	}
+
+	.hp-tv img {
+		width: 28.75rem;
+		height: 19.8125rem;
+
+	}
+
+	.hp-logo-row {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 20rem;
+		margin-left: 5rem;
+	}
+
+	.description-hp {
+		width: 28.75rem;
+	}
+
+	.hp-block-left {
+		width: 28.75rem;
+	}
+
+	.description-hp-title {
+		margin: 0;
+		font-size: 3.875rem;
+	}
+
+	.description-hp-text {
+		font-size: 1.125rem;
+	}
+
+	.hp-button {
+		margin: 0;
+	}
+
+	.hp-features {
+		display: flex;
+		justify-content: start;
+		width: 24rem;
+	}
+
+	.hp-features img {
+		width: 2rem;
+		height: 2rem;
+	}
+
+	/* footer */
+	.footer {
+		margin: 0;
+		padding: 0 2.25rem;
+		display: flex;
+		justify-content: space-between;
+		width: 64rem;
+		height: 6.25rem;
+
+	}
+
+	.copy {
+		margin: 0;
+		padding: 0 2.25rem;
+		width: 100vw;
+		height: 2.5rem;
+		background: #000;
+		padding: 0.3rem 0;
+
+	}
+}
+
+/* media smartphone */
+@media screen and (max-width:320px) {
+	* {
+		margin: 0;
+		padding: 0;
+	}
+
+	html {
+		font-size: 5vw;
+	}
+
+	.header {
+		width: 20rem;
+		height: 44.5625rem;
+		padding: 0;
+		background-image: url('./../img/adapt/bg-header-ph.png');
+		background-size: cover;
+		background-repeat: repeat;
+	}
+
+	.nav {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.logo img {
+		width: 12.5rem;
+		height: 3.125rem;
+	}
+
+	.menu img {
+		width: 1.5625rem;
+		height: 1.5625rem;
+	}
+
+	.menu>a:not(:last-child) {
+		padding-right: 1rem;
+	}
+
+	.yellow-block {
+		display: flex;
+		flex-direction: column;
+		padding: 0;
+		margin: 28.19rem 0 0 0;
+		width: 100vw;
+		height: 13rem;
+	}
+
+	.header-text {
+		text-align: center;
+		font-size: 1.875rem;
+		padding: 1.88rem 0 0 0;
+	}
+
+	.header-button {
+		margin: 1.5rem 2.3rem;
+		padding: 0.5rem 0;
+		width: 15.25rem;
+		height: 3.75rem;
+		font-size: 1.25rem;
+	}
+
+	.description-game {
+		width: 100vw;
+		height: 92.5rem;
+		margin: 7.38rem 0 4.38rem 0;
+	}
+
+	.description-title {
+		margin: 0 0.75rem 1.56rem 0.75rem;
+		width: 18.5rem;
+		font-size: 1.875rem;
+	}
+
+	.description-text {
+		margin: 0 0.75rem 4.38rem 0.75rem;
+		font-size: 1rem;
+	}
+
+	.gallery {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		width: 18rem;
+	}
+
+	.gallery-img-1 {
+		width: 20rem;
+		height: 12.25rem;
+	}
+
+	.gallery-img-2 {
+		width: 20rem;
+		height: 12.25rem;
+	}
+
+	.gallery-img-3 {
+		width: 20rem;
+		height: 26.5rem;
+	}
+
+	.raffle {
+		width: 100%;
+		height: 65rem;
+		padding: 3rem 0.75rem 4rem 0.75rem;
+		background: #000;
+		color: #FFF;
+	}
+
+	.raffle-wrapper {
+		padding: 0;
+		width: 19rem;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.border-bottom {
+		width: 10rem;
+	}
+
+	.form-wrap {
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		margin-top: 4rem;
+		width: 19rem;
+	}
+
+	.name-input,
+	.email-input {
+		width: 18.5rem;
+	}
+
+	.file-label {
+		width: 18.5rem;
+		height: 7.5rem;
+	}
+
+	.raffle-title-block {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+
+	.raffle-star {
+		background-image: url('./../img/raffle/star.svg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 4rem;
+		height: 4rem;
+		padding: 1rem;
+	}
+
+	.raffle-star-text {
+		padding: 0.5rem 0rem;
+		font-size: 0.875rem;
+	}
+
+	.raffle-title {
+		font-size: 1.875rem;
+		margin: 0 1rem;
+	}
+
+	.checkbox {
+		padding: 1rem 0;
+	}
+
+	.raffle-images {
+		margin: 0;
+		padding: 0;
+		width: 18.5rem;
+		display: flex;
+		flex-direction: row;
+	}
+
+	.Xbox-img {
+		width: 8.25rem;
+		height: 8.17825rem;
+		background: url('./../img/raffle/Layer-1.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		z-index: 3;
+		margin: 0;
+		padding: 0;
+	}
+
+	.Xbox-img img {
+		margin: 0;
+		padding: 0;
+		width: 5rem;
+		height: 6rem;
+	}
+
+	.PlayStation-img {
+		width: 8.25rem;
+		height: 8.17825rem;
+		background: url('./../img/raffle/Layer-2.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin: 0;
+		padding: 0;
+	}
+
+	.PlayStation-img img {
+		margin: 0;
+		padding: 0;
+		width: 5rem;
+		height: 6rem;
+	}
+
+	.hp-block {
+		display: flex;
+		flex-direction: column;
+		width: 100vw;
+		height: 70rem;
+		padding: 4.38rem 0.75rem;
+		background: #F8F200;
+		margin: 0;
+	}
+
+	.hp-block-left {
+		width: 100vw;
+	}
+
+	.hp-tv {
+		width: 18.5rem;
+		height: 12.75rem;
+	}
+
+	.hp-tv img {
+		width: 18.5rem;
+		height: 12.75rem;
+	}
+
+	.hp-logo-row {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin: 1rem 0;
+		padding: 0;
+		width: 18.5rem;
+	}
+
+	.description-hp {
+		margin: 0;
+		width: 18.5rem;
+	}
+
+	.hp-block-left {
+		margin: 0;
+		width: 18.5rem;
+	}
+
+	.description-hp-title {
+		padding: 1rem 0;
+		font-size: 1.875rem;
+		width: 18.5rem;
+	}
+
+	.description-hp-text {
+		padding: 0;
+		font-size: 1.125rem;
+		width: 18.5rem;
+		font-size: 1rem;
+	}
+
+	.hp-button {
+		margin: 0;
+	}
+
+	.hp-features {
+		display: flex;
+		justify-content: start;
+		width: 18.5rem;
+	}
+
+	.hp-features img {
+		width: 2rem;
+		height: 2rem;
+	}
+
+	.logo-cyberpunk {
+		width: 10.96294rem;
+		height: 2.75rem;
+	}
+
+	.logo-hp {
+		width: 2.74075rem;
+		height: 2.75rem;
+	}
+
+	.footer {
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		width: 20rem;
+		height: 20rem;
+
+	}
+
+	.copy {
+		margin: 0;
+		padding: 0;
+		width: 20rem;
+		height: 2.5rem;
+		background: #e6cccc;
+		padding: 0.3rem 0;
+
+	}
+
+	.footer-logo {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.privacy {
+		display: flex;
+		flex-direction: column;
+	}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.none {
+	display: none;
 }
